@@ -1,43 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__title">
+                <span>Marvel </span>information portal
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <a href="" class="header__link header__link_active">Characters</a>
+                    </li>
+                    /
+                    <li>
+                        <a href="" class="header__link">Comics</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="random-info">
+                <section class="random-info__info">
+                    <div class="random-info__image">
+                        <img src="./img/thor.jpeg" alt="THOR">
+                    </div>
+                    <div class="random-info__title title-hero">
+                        THOR
+                    </div>
+                    <div class="random-info__description">
+                        As the Norse God of thunder and lightning, Thor wields one of the greatest weapons ever made, the enchanted hammer Mjolnir. While others have described Thor as an over-muscled, oafish imbecile, he's quite smart and compassionate...
+                    </div>
+                    <div class="random-info__buttons">
+                        <button class="btn btn_active">HOMEPAGE</button>
+                        <button class="btn">WIKI</button>
+                    </div>
+                </section>
+                <section class="random-info__cta">
+                    <p class="random-info__cta-message">Random character for today!</p>
+                    <p class="random-info__cta-message">Do you want to get to know him better?</p>
+                    <br/>
+                    <p class="random-info__cta-message">Or choose another one</p>
+                    <button class="btn btn_active">TRY IT</button>
+                    <div class="random-info__img">
+                        <img src="./img/mjolnir.png" alt="mjolnir">
+                    </div>
+                </section>
+            </div>
+            <div class="content">
+                <div class="heroes">
+                    <div class="hero">
+                        <div class="hero__img">
+                            <img src="./img/cee2586f6a97be2caede4a2574a9c011.jpeg" alt="">
+                        </div>
+                        <div class="hero__name">
+                            HULK
+                        </div>
+                    </div>
+                    <div class="hero">
+                        <div class="hero__img">
+                            <img src="./img/cee2586f6a97be2caede4a2574a9c011.jpeg" alt="">
+                        </div>
+                        <div class="hero__name">
+                            HULK
+                        </div>
+                    </div>
+                    <div class="hero">
+                        <div class="hero__img">
+                            <img src="./img/cee2586f6a97be2caede4a2574a9c011.jpeg" alt="">
+                        </div>
+                        <div class="hero__name">
+                            HULK
+                        </div>
+                    </div>
+                    <div class="hero">
+                        <div class="hero__img">
+                            <img src="./img/cee2586f6a97be2caede4a2574a9c011.jpeg" alt="">
+                        </div>
+                        <div class="hero__name">
+                            HULK
+                        </div>
+                    </div>
+                    <div class="hero">
+                        <div class="hero__img">
+                            <img src="./img/cee2586f6a97be2caede4a2574a9c011.jpeg" alt="">
+                        </div>
+                        <div class="hero__name">
+                            HULK
+                        </div>
+                    </div>
+                    <div class="hero">
+                        <div class="hero__img">
+                            <img src="./img/cee2586f6a97be2caede4a2574a9c011.jpeg" alt="">
+                        </div>
+                        <div class="hero__name">
+                            HULK
+                        </div>
+                    </div>
+                    <div class="hero">
+                        <div class="hero__img">
+                            <img src="./img/cee2586f6a97be2caede4a2574a9c011.jpeg" alt="">
+                        </div>
+                        <div class="hero__name">
+                            HULK
+                        </div>
+                    </div>
+                    <div class="hero">
+                        <div class="hero__img">
+                            <img src="./img/cee2586f6a97be2caede4a2574a9c011.jpeg" alt="">
+                        </div>
+                        <div class="hero__name">
+                            HULK
+                        </div>
+                    </div>
+                    <div class="hero">
+                        <div class="hero__img">
+                            <img src="./img/cee2586f6a97be2caede4a2574a9c011.jpeg" alt="">
+                        </div>
+                        <div class="hero__name">
+                            HULK
+                        </div>
+                    </div>
+                    <div class="hero">
+                        <div class="hero__img">
+                            <img src="./img/cee2586f6a97be2caede4a2574a9c011.jpeg" alt="">
+                        </div>
+                        <div class="hero__name">
+                            HULK
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-info">
+                    <div class="hero-info__img">
+                        <img src="./img/loki.jpeg" alt="">
+                    </div>
+                    <div class="hero-info__actions">
+                        <div class=" title-hero">
+                            LOKI
+                        </div>
+                        <button class="btn btn_active">HOMEPAGE</button>
+                        <button class="btn">WIKI</button>
+                    </div>
+                    <div class="hero-info__description">
+                        In Norse mythology, Loki is a god or jötunn (or both). Loki is the son of Fárbauti and Laufey, and the brother of Helblindi and Býleistr. By the jötunn Angrboða, Loki is the father of Hel, the wolf Fenrir, and the world serpent Jörmungandr. By Sigyn, Loki is the father of Nari and/or Narfi and with the stallion Svaðilfari as the father, Loki gave birth—in the form of a mare—to the eight-legged horse Sleipnir. In addition, Loki is referred to as the father of Váli in the Prose Edda.
+                    </div>
+                    <div class="hero-info__comics">
+                        <div class="hero-info__comic">
+                            All-Winners Squad: Band of Heroes (2011) #3
+                        </div>
+                        <div class="hero-info__comic">
+                            All-Winners Squad: Band of Heroes (2011) #3
+                        </div>
+                        <div class="hero-info__comic">
+                            All-Winners Squad: Band of Heroes (2011) #3
+                        </div>
+                        <div class="hero-info__comic">
+                            All-Winners Squad: Band of Heroes (2011) #3
+                        </div>
+                        <div class="hero-info__comic">
+                            All-Winners Squad: Band of Heroes (2011) #3
+                        </div>
+                        <div class="hero-info__comic">
+                            All-Winners Squad: Band of Heroes (2011) #3
+                        </div>
+                        <div class="hero-info__comic">
+                            All-Winners Squad: Band of Heroes (2011) #3
+                        </div>
+                        <div class="hero-info__comic">
+                            All-Winners Squad: Band of Heroes (2011) #3
+                        </div>
+                        <div class="hero-info__comic">
+                            All-Winners Squad: Band of Heroes (2011) #3
+                        </div>
+                        <div class="hero-info__comic">
+                            All-Winners Squad: Band of Heroes (2011) #3
+                        </div>
+                    </div>
+                    
+    
+                </div>
+            </div>
+        </main>
+        <div class="footer">
+            <button class="footer__button">
+                LOAD MORE
+            </button>
+            <div class="footer__img">
+                <img src="./img/hero_violet.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+</body>
 </html>

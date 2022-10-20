@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+/*Обнуление*/
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    
+}
+html,
+body {
+	height: 100%;
+	
+	
+	
+}
+a {
+	color: black;
+    text-decoration: none;
+}
+h1 {
+	font-size: 40px;
+	line-height: 1;
+	margin: 0px 0px 50px 0px;
+}
+h2 {
+	font-size: 30px;
+	line-height: 1;
+	margin: 0px 0px 20px 0px;
+}
+ul {
+	list-style: none;
+}
+/* ================ */
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template: minmax(87px, auto) 1fr minmax(128px,auto) / 1fr;
+}
+.header {
+    font-weight: bold;
+    padding: 50px 0px;
+    display:grid;
+    grid-template: 1fr / 1fr minmax(auto, 650px) minmax(auto, 450px) 1fr ;
+    
+}
+
+.header__title {
+    line-height: 33px;
+    font-size: 28px;
+    grid-column: 2/3;
+    span {
+        color: #9F0013;
+    }
+}
+
+.header__menu {
+    align-items:flex-end;
+    line-height: 28px;
+    font-size: 24px;
+    display: grid;
+    justify-items: end;
+    grid-column: 3/4;
+}
+
+.header__list {
+    justify-items: end;
+    display:grid;
+    grid-template: 1fr / minmax(105px,105px) minmax(20px,20px) minmax(80px,80px);
+    
+}
+
+.header__link {
+
+}
+
+.header__link_active {
+    color: #9F0013;
+}
