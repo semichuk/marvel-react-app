@@ -83,3 +83,38 @@ ul {
 .header__link_active {
     color: #9F0013;
 }
+
+.random-info{
+    display: grid;
+    grid-template: 1fr /  1fr minmax(auto, 550px) minmax(auto, 550px) 1fr ;
+    img {
+        width: 180px;
+        height: 180px;
+        margin: 35px 30px 35px 40px;
+    }
+}
+
+.random-info__info{
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template: 1fr / minmax(auto, 250px) minmax(auto, 265px);
+    
+}
+
+.random-info__cta{
+    grid-column: 3 / 4;
+
+}
+
+.random-info__description{
+    margin: 35px 35px  35px 0px;
+}
+
+.random-info__image{
+
+}
+
+
+
+
+
