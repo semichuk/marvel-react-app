@@ -96,6 +96,7 @@ $grey: #5C5C5C;
     color: $main-color;
 }
 
+
 .random-info {
     display: grid;
     grid-template: 1fr / 1fr minmax(auto, 1100px) 1fr;
@@ -107,16 +108,17 @@ $grey: #5C5C5C;
     grid-template: 1fr / 1fr minmax(auto, 550px) minmax(auto, 550px) 1fr;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
 
-    
+
 }
 
-.random-info__image{
+.random-info__image {
     img {
         width: 180px;
         height: 180px;
         margin: 35px 30px 35px 40px;
     }
 }
+
 .random-info__info {
     grid-column: 2 / 3;
     display: grid;
@@ -144,23 +146,23 @@ $grey: #5C5C5C;
 }
 
 .random-info__cta-img {
-    position:absolute;
+    position: absolute;
     transform: translate(384px, -204px);
     height: 189px;
     width: 203px;
-    
+
 }
 
-.random-info__cta-message{
+.random-info__cta-message {
     font-size: 24px;
     font-weight: 700;
 }
 
-.random-info__cta-text{
-    margin: 35px 137px 35px 40px 
+.random-info__cta-text {
+    margin: 35px 137px 35px 40px
 }
 
-.random-info__cta-button{
+.random-info__cta-button {
     margin: 17px 409px 35px 0px
 }
 
@@ -219,85 +221,139 @@ $grey: #5C5C5C;
 
 }
 
-.content{
+.content {
     display: grid;
     grid-template: 1fr / 1fr minmax(auto, 650px) minmax(auto, 450px) 1fr;
     margin-top: 53px;
     align-items: start;
 }
 
-.heroes{
-    grid-column:2 / 3;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    row-gap: 30px;
-    column-gap: 25px;
-}
-
-.hero-info{
+.hero-info {
     grid-column: 3 / 4;
     margin-left: 25px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-    img{
+
+    img {
         width: 150px;
         height: 150px;
     }
 }
 
-.hero{
-    width: 200px;
-    height: 318px;
-    background-color: #232222;
-    color: white;
-    font-size: 22px;
-    font-weight: 700;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-}
 
-.hero-info__info{
+
+.hero-info__info {
     margin: 25px;
 }
 
-.hero-info__description{
+.hero-info__description {
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 400px;
 }
 
-.hero-info__btn1{
+.hero-info__btn1 {
     margin-top: 35px;
-    margin-bottom:10px
+    margin-bottom: 10px
 }
-.hero-info__grid{
+
+.hero-info__grid {
     display: grid;
     grid-template-columns: minmax(auto, 175px) 1fr;
 }
 
-.hero-info__comics{
-    p{
+.hero-info__comics {
+    p {
         margin-bottom: 13px;
         font-weight: 700;
-        font-size:18px;
+        font-size: 18px;
     }
 }
 
-.hero-info__comic{
+.hero-info__comic {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    line-height:25px;
+    line-height: 25px;
     margin-top: 10px;
     font-size: 14px;
     font-weight: 400;
     padding: 0px 10px;
 }
 
-.hero__name{
-    margin: 15px 15px 74px 15px;
-}
-.hero__img{
-    img{
+.heroes-grid {
+
+    display: grid;
+    grid-template-rows: 1fr 128px;
+    grid-column: 2 / 3;
+
+    &_selected {
+        box-shadow: 0 5px 20px $main-color;
+        transform: translateY(-8px);
+    }
+
+    &_unselected {
+        box-shadow: 0px 0px 20px $dark;
+    }
+
+    &__name {
+        margin: 15px 15px 74px 15px;
+    }
+    
+    &__flexbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__button {
+        height: 38px;
+        width: 170px;
+        background-color: $main-color;
+        color: white;
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        background: linear-gradient(135deg, transparent 7px, #9F0013 0) top left,
+
+            linear-gradient(-135deg, transparent 0px, #9F0013 0) top right,
+
+            linear-gradient(-45deg, transparent 7px, #9F0013 0) bottom right,
+
+            linear-gradient(45deg, transparent 0px, #9F0013 0) bottom left;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    &__hero {
         width: 200px;
-        height: 200px; 
+        height: 318px;
+        background-color: #232222;
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+        
+    }
+
+    &__img {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    &__heroes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        row-gap: 30px;
+        column-gap: 25px;
     }
 }
 
+.footer {
+    &__img {
+        img {
+            height: 372px;
+            width: 467px;
+        }
+    }
+}
